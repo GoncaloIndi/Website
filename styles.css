@@ -4,8 +4,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body{
     background-color: #24252a;
 }
+
 
 li, a, button {
     font-family: "Open Sans", sans-serif;
@@ -20,10 +24,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background-color: #363636;
+    height: 15vh;
 }
 
 .logo {
     cursor: pointer;
+    height: 100px;
+    width: auto;
 }
 
 .nav__links {
@@ -56,10 +64,172 @@ button:hover {
     background-color: rgba(0, 136, 169, 0.8);  
 }
 
-article {
+h1{
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
+    color: rgba(0, 136, 169, 1);
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13pt;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row-reverse;
+    color: #edf0f1;
+    justify-content: space-between;
+    align-content: center;
+    height: 85vh;
+}
+
+.intro p{
+    font-size: 16pt;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    height: 100px; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro img{
+    height: 100%;
+    width: auto;
+}
+
+.aboutme{
     text-align: center;
     color: #edf0f1;
+    justify-content: center;
+    width: 40%;
+    margin: 50px auto;
+}
+
+.aboutme h1{
+    margin-bottom: 10px;
+}
+
+.aboutme p{
+    margin-bottom: 50px;
+}
+
+.aboutme img{
+    border: 9px solid #0088a9;
+    border-radius: 10px;
+}
+
+.resumee{
+    text-align: center;
+    color: #edf0f1;
+    justify-content: center;
+    width: 40%;
+    margin: 50px auto;
+}
+
+.resumee p{
+    margin-top: 50px;
+}
+
+.projects{
+    text-align: center;
+    color: #edf0f1;
+    justify-content: center;
+    width: 40%;
+    margin: 50px auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.projects div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 50px;
+}
+
+.projects h2{
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17pt;
+    color: #edf0f1;
+}
+
+.projects p{
+    margin-top: 15px;
+    font-size: 12pt;
+}
+
+.projects a{
+    border-radius: 10px;
+    background-image: url(images/background.png);
+    background-size: contain;
+}
+
+.projects img{
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+.projects img:hover{
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.contintro{
+    text-align: center;
+    color: #edf0f1;
+    justify-content: center;
+    width: 40%;
+    margin: 50px auto;
+    margin-top: 300px;
+}
+
+.contintro h1{
+    margin-bottom: 20px;
+    color: rgba(0, 136, 169, 1);
+}
+
+hr{
+    width: 30%;
+    margin: auto;
+    border-color: rgba(0, 136, 169, 1);
+}
+
+.contact{
+    text-align: center;
+    color: #edf0f1;
+    width: 40%;
+    margin: 50px auto;
+}
+
+.contact div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.contact img{
+    width: auto;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact img:last-of-type{
+    width: 30px;
+    height: auto;
 }
